@@ -76,7 +76,7 @@ h1{
     width:100px;
     line-height: 100%;
     margin-left:15%;
-    margin-top:50px;
+    margin-top:65px;
     margin-bottom:10px;
     text-transform: capitalize;
 }
@@ -126,6 +126,7 @@ a{
     margin-left:15%;
     margin-bottom:35px;
     max-width:85%;
+    margin-bottom:75px;
 }
 #introduction-container p{
     line-height: 50%;
@@ -162,6 +163,7 @@ a{
     background:url(/images/background-index-image.jpg) no-repeat;
     background-position:right 60% bottom 60%;
     opacity: 0.35;
+    margin-bottom:50px;
 }
 
 /* work containers */
@@ -202,20 +204,18 @@ footer{
     padding-bottom: 50px;;
 }
 /* MEDIA QUERIES */
-
-@media only screen and (min-width:500px){
-
-    h2, #equal-icon {
-        margin-left:25%;
-    }
-    
-}
 @media only screen and (min-width:900px){
-
+    #logo{
+        width:100px;
+        height:auto;
+        margin-left:40px;
+    }
+    h1{
+        margin-top:85px;
+    }
     .background-size{
         height:350px;
     }
-
     h2, #equal-icon {
         margin-left:15%;
     }
@@ -231,6 +231,9 @@ footer{
     }
     h3, .container-p{
         margin-left:25%;
+    }
+    #introduction-container{
+        margin-bottom:85px;
     }
 }
 @media only screen and (min-width:1100px){
@@ -257,14 +260,14 @@ footer{
     h1{
         font-size:3.5em;
         line-height: 100%;
-        margin-top:125px;
+        margin-top:150px;
     }
     h1, #introduction-container{
         margin-left:15%;
     }
     h2{
         font-size: 1.8em;
-        margin-top:350px;
+        margin-top:250px;
     }
     h2, #equal-icon {
         margin-left:15%;
