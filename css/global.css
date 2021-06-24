@@ -30,7 +30,6 @@ header{
 nav{
     margin-right:20px;
     position:absolute;
-    left:33.3vw;
     display:none;
     background-color: #011d4485;
     z-index: 100;
@@ -168,7 +167,7 @@ a{
 
 /* work containers */
 .work-container{
-    width:75vw;
+    width:100vw;
     max-width:400px;
     display:flex;
     flex-direction: column;
@@ -195,13 +194,12 @@ a{
     margin-left:45%;
 }
 /* FOOTER */
-
 footer{
     position: relative;
     z-index: 1;
     text-align: center;
     margin-top:75px;
-    padding-bottom: 50px;;
+    padding-bottom: 50px;
 }
 /* MEDIA QUERIES */
 @media only screen and (min-width:900px){
@@ -244,12 +242,12 @@ footer{
     header{
         margin-top:20px;
     }
-    nav{
+    /* nav{
         margin-right:5%;
         display:inline-block;
         position: relative;
         background:none;
-    }
+    } */
     nav ul li{
         display: inline;
         margin-left:10px;
