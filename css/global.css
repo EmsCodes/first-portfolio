@@ -294,6 +294,7 @@ footer{
         width:225px;
         left:28%;
         top:30vh;
+        position: fixed;
     }
     .background-img{
         background:none;
@@ -334,33 +335,12 @@ footer{
         margin-left:15px;
         width:300px;
     }
-    @media only screen and (min-width:1400px){
-    #logo{
-        width:100px;
-        margin-left:60px;
-        margin-top:10px;
-    }
-    h1{
-        font-size:5em;
-    }
-    h1, #introduction-container{
-        margin-left:20%;
-    }
-    h2{
-        font-size: 2.2em;
-    }
-    h2, #equal-icon {
-        margin-left:20%;
-    }
-    .project-container{
-        z-index:2;
-        margin-left:15px;
-        width:300px;
-    }
 }
-@media only screen and (min-width:1400px){
+@media only screen and (min-width:1700px){
     h2, #equal-icon {
         margin-left:25%;
     }
-}
+    #designer-developer-img{
+        left:27%;
+    }
 }
