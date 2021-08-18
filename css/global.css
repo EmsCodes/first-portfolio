@@ -13,9 +13,6 @@ body{
     color:var(--white-color);
     margin:0;
 }
-/* main{
-    overflow: hidden;
-}  */
 #logo{
     width:65px;
     height:auto;
@@ -83,7 +80,7 @@ h2{
     font-family: var(--main-font);
     font-size: 1.5em;
     font-weight: 300;
-    margin-left:10%;
+    margin-left:15%;
     margin-top:35px;
 }
 h3{
@@ -337,9 +334,6 @@ footer{
     }
 }
 @media only screen and (min-width:1700px){
-    h2, #equal-icon {
-        margin-left:25%;
-    }
     #designer-developer-img{
         left:27%;
     }
