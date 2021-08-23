@@ -69,18 +69,36 @@ h1{
     font-family: var(--main-font);
     font-size:2.2em;
     font-weight: 400;
-    width:100px;
     line-height: 100%;
-    margin-left:15%;
     margin-top:65px;
     margin-bottom:10px;
+    white-space: nowrap;
     text-transform: capitalize;
+    overflow: hidden;
+    animation: 
+        typewriter 1.4s ease-in 1s, 
+        blinking-margin 10s ease-in-out 1s;
+    animation-iteration-count: 1;
+}
+@keyframes typewriter{
+    from{
+        width: 0;
+    }
+    to{
+        width: 190px;
+    }
+}
+@keyframes  blinking-margin {
+    from{ border-color: transparent; }
+    to{ border-color: var(--orange); }
+}
+h1, h2, h4{
+    margin-left:10%;
 }
 h2{
     font-family: var(--main-font);
     font-size: 1.5em;
     font-weight: 300;
-    margin-left:15%;
     margin-top:35px;
 }
 h3{
@@ -90,13 +108,6 @@ h3{
     margin-bottom:0px;
     margin-top:0px;
     margin-left:35%;
-}
-h4{
-    color:var(--white-color);
-    margin-left:10%;
-    font-size:1.1em;
-    padding-bottom:10px;
-    border-bottom: 1px solid var(--white-border-color);
 }
 .container-text{
     position: relative;
@@ -119,13 +130,20 @@ a{
 #introduction-container{
     display: flex;
     flex-flow:row nowrap;
-    margin-left:15%;
+    margin-left:10%;
     margin-bottom:35px;
     max-width:85%;
     margin-bottom:75px;
 }
 #introduction-container p{
     line-height: 50%;
+    opacity: 0%;
+    animation: fade-in 0.9s ease-in 2.6s;
+    animation-fill-mode: forwards;
+}
+@keyframes fade-in{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
 }
 /* icons/styling images */
 #orange-brackets{
@@ -144,7 +162,7 @@ a{
     width:175px;
     height:auto;
     position:absolute;
-    margin-left:45%;
+    margin-left:40%;
     margin-top:150px;
     z-index: 100;
 }
@@ -157,7 +175,7 @@ a{
 }
 .background-img{
     background:url(/images/background-index-image.jpg) no-repeat;
-    background-position:right 60% bottom 60%;
+    background-position:right 58% bottom 60%;
     opacity: 0.35;
     margin-bottom:50px;
 }
@@ -200,6 +218,9 @@ footer{
 }
 /* MEDIA QUERIES */
 @media only screen and (min-width:400px){
+    h1, #introduction-container, h2, #equal-icon{
+        margin-left:15%;
+    }
     .container-p, h3{
         margin-left:40%;
     }
@@ -265,6 +286,14 @@ footer{
         font-size:3.5em;
         line-height: 100%;
         margin-top:150px;
+        animation: 
+            typewriter 1.5s steps(50) 1s 1 normal both, 
+            blinking-margin 0.5s steps(50) 1s infinite;
+        border-right: 2px solid var(--orange);
+    }
+    @keyframes typewriter{
+      from{width: 0;}
+      to{width: 300px;}
     }
     h1, #introduction-container{
         margin-left:15%;
@@ -321,6 +350,12 @@ footer{
     h1, #introduction-container{
         margin-left:20%;
     }
+    #introduction-container p{
+        font-size: 1.2em;
+    }
+    #orange-brackets{
+        margin-top:15px;
+    }
     h2{
         font-size: 2.2em;
     }
@@ -332,6 +367,11 @@ footer{
         margin-left:15px;
         width:300px;
     }
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 430px;}
+    }
+
 }
 @media only screen and (min-width:1700px){
     #designer-developer-img{
